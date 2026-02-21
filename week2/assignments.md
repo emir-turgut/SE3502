@@ -1,0 +1,33 @@
+- **Exercise 1: The Integer Divider**
+    - Write a function called `divMod` that takes two integers, `numerator` and `denominator`.
+    - It should return two values: the `quotient` (int) and the `remainder` (int).
+    - In `main`, call this function with `13` and `4`. Print the results in a formatted string (e.g., "13 divided by 4 is 3 with a remainder of 1").
+- **Exercise 2: The Coordinate Calculator**
+    - Write a function called `rectProps` that takes `length` and `width` (float64).
+    - The function signature should name the return values `area` and `perimeter`.
+    - Calculate these values inside the function.
+    - Use a **bare return** (just the keyword `return`) at the end.
+    - Call it in `main` and print the results.
+- **Exercise 3: The Pointer Swap**
+    - Write a function called `swapStrings` that takes two **pointers to strings** (`string`) as arguments.
+    - Inside the function, swap the values stored at those addresses.
+    - In `main`:
+        - Declare `a := "Hello"` and `b := "World"`.
+        - Print them.
+        - Call `swapStrings` passing the **addresses** of `a` and `b`.
+        - Print them again to prove they swapped.
+- **Exercise 4: The "Multiplier" (Pass-by-Value vs Pointer)**
+    - Create a function `doubleValue(x int)` that multiplies `x` by 2.
+    - Create a function `doublePointer(x *int)` that multiplies the value at `x` by 2.
+    - In `main`, declare an integer `count = 10`.
+    - Call `doubleValue(count)` and print `count` (Expectation: It should still be 10).
+    - Call `doublePointer(&count)` and print `count` (Expectation: It should now be 20).
+- **Exercise 5: The Bank Account Update**
+    - Write a function called `withdraw`.
+    - Parameters:
+        - `balance`: A **pointer** to a float64 (so we can modify the actual bank balance).
+        - `amount`: A float64 (the amount to take out).
+    - Logic:
+        - If `amount` is greater than the value at `balance`, return `false` (transaction failed) and do not modify the balance.
+        - If `amount` is valid, subtract it from the value at `balance` and return `true`.
+    - In `main`, set a balance of `100.0`. Try to withdraw `150.0` (print failure), then withdraw `50.0` (print success and new balance).
