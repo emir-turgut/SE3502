@@ -1,0 +1,10 @@
+- **Exercise 1: "Student Gradebook"**
+    - You need to build a system that stores students' names and a list of their exam scores. We will use a `map` where the *key* is the student's name (string) and the *value* is a *slice* of scores (`[]float64`).
+- **Exercise 2: The "TodoList" Manager (Slice Manipulation)**
+    - Create a slice of tasks. Write a function to delete the task at a specific index (e.g., index 2) while maintaining the order of the remaining items.
+- **Exercise 3: Word Frequency Counter (Map Logic)**
+    - Given a sentence, count how many times each word appears.
+- **Exercise 4: Capacity Optimization (Performance)**
+    - Compare creating a slice with `make([]int, 0)` vs `make([]int, 0, 1000)` when appending 1000 items. (We will simulate the logic here; normally you'd benchmark this).
+- **Exercise 5: Matrix Transformation (Nested Slices)**
+    - Create a 3x3 grid (matrix) representing pixels. Invert the values (e.g., if 0 is black and 1 is white, swap them).
